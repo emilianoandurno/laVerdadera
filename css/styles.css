@@ -502,7 +502,7 @@ section[id] { scroll-margin-top: 72px; }
 .contact-title span { color: var(--lemon); }
 .phone-giant {
   display: inline-flex; flex-wrap: wrap; justify-content: center; gap: 0 .25em; margin: 26px 0 8px;
-  font: 800 clamp(3.2rem, 15vw, 9rem)/1 var(--font-display); letter-spacing: -.04em;
+  font: 800 clamp(2.4rem, 15vw, 9rem)/1 var(--font-display); letter-spacing: -.04em;
   color: var(--cream); text-decoration: none;
   text-shadow: .04em .04em 0 var(--ink);
 }
@@ -610,6 +610,14 @@ section[id] { scroll-margin-top: 72px; }
 }
 
 /* ---------- RESPONSIVE ---------- */
+/* ---------- CELULARES CHICOS (< 380px) ---------- */
+/* Logo, horarios y teléfono en una sola línea */
+@media (max-width: 379px) {
+  .logo-name { font-size: 1.3rem; white-space: nowrap; }
+  .shift-time { font-size: 1.4rem; white-space: nowrap; }
+  .phone-giant { white-space: nowrap; }
+}
+
 @media (min-width: 640px) {
   .gallery { gap: 28px 24px; }
   .bento { grid-template-columns: repeat(2, minmax(0, 1fr)); }
