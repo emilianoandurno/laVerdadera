@@ -41,7 +41,7 @@ En `index.html`, buscá `EDITAR: dirección`:
 2. Guardalas en `img/local/` (por ejemplo `frente.webp`).
 3. En `index.html`, reemplazá cada bloque `<div class="photo-placeholder" ...>...</div>` por:
    ```html
-   <img src="img/local/frente.webp" alt="Frente de Verdulería La Verdadera en Alta Gracia" width="800" height="1000" loading="lazy" decoding="async">
+   <img src="img/local/frente.webp" alt="Frente de Verdulería La Verdadera en Villa Parque Santa Ana" width="800" height="1000" loading="lazy" decoding="async">
    ```
 4. Cambiá el `<figcaption>` si querés otro texto.
 
