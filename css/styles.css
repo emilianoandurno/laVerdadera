@@ -257,13 +257,15 @@ section[id] { scroll-margin-top: 72px; }
   50% { transform: translateY(-14px) rotate(calc(var(--r) + 7deg)); }
 }
 @keyframes pop { from { scale: 0; } }
-.hp1 { left: 10%; top: 30%; width: 34%; --depth: 26px; }
-.hp2 { left: 52%; top: 9%;  width: 30%; --depth: -18px; }
-.hp3 { left: 56%; top: 50%; width: 32%; --depth: 34px; }
-.hp4 { left: 24%; top: 66%; width: 26%; --depth: -28px; }
-.hp5 { left: 4%;  top: 4%;  width: 20%; --depth: 14px; }
-.hp6 { left: 80%; top: 32%; width: 19%; --depth: -40px; }
-.hp7 { left: 36%; top: 24%; width: 21%; --depth: 44px; z-index: 1; }
+.hp1 { left: 8%;  top: 26%; width: 28%; --depth: 26px; }
+.hp2 { left: 52%; top: 6%;  width: 27%; --depth: -18px; }
+.hp3 { left: 60%; top: 42%; width: 27%; --depth: 34px; }
+.hp4 { left: 2%;  top: 62%; width: 22%; --depth: -28px; }
+.hp5 { left: 4%;  top: 4%;  width: 18%; --depth: 14px; }
+.hp6 { left: 81%; top: 26%; width: 17%; --depth: -40px; }
+.hp7 { left: 36%; top: 22%; width: 19%; --depth: 44px; z-index: 1; }
+.hp8 { left: 24%; top: 50%; width: 38%; --depth: -22px; }
+.hp9 { left: 27%; top: 0%;  width: 22%; --depth: 30px; }
 
 .scroll-cue {
   position: absolute; left: 50%; bottom: 24px; translate: -50% 0;
