@@ -1,0 +1,504 @@
+<!doctype html>
+<html lang="es-AR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Marca que hay JS antes de pintar: las animaciones de entrada solo se aplican si JS está activo -->
+  <script>document.documentElement.className += ' js';</script>
+
+  <title>Verdulería La Verdadera | Frutas y verduras frescas en Alta Gracia</title>
+  <meta name="description" content="Verdulería La Verdadera en Alta Gracia, Córdoba. Frutas y verduras frescas de estación. Abierto de 8 a 13:30 y de 18 a 21 h. Efectivo y transferencia. Llamanos al 351 386-3812.">
+  <meta name="theme-color" content="#1d4a2f">
+  <!-- EDITAR: dominio definitivo (también en og:url, og:image, JSON-LD, sitemap.xml y robots.txt) -->
+  <link rel="canonical" href="https://www.verduleriavicky.com.ar/">
+
+  <!-- Open Graph / redes sociales -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_AR">
+  <meta property="og:site_name" content="Verdulería La Verdadera">
+  <meta property="og:title" content="Verdulería La Verdadera | Frutas y verduras frescas en Alta Gracia">
+  <meta property="og:description" content="Lo fresco tiene nombre. Frutas y verduras de estación en Alta Gracia, Córdoba. Llamanos al 351 386-3812.">
+  <meta property="og:url" content="https://www.verduleriavicky.com.ar/">
+  <meta property="og:image" content="https://www.verduleriavicky.com.ar/img/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Verdulería La Verdadera, Alta Gracia: frutas y verduras frescas">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Verdulería La Verdadera | Frutas y verduras frescas en Alta Gracia">
+  <meta name="twitter:description" content="Lo fresco tiene nombre. Frutas y verduras de estación en Alta Gracia, Córdoba.">
+  <meta name="twitter:image" content="https://www.verduleriavicky.com.ar/img/og-image.png">
+
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+  <link rel="manifest" href="manifest.webmanifest">
+
+  <!-- Fuentes: carga no bloqueante (2 familias, font-display: swap) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600..800&family=DM+Sans:opsz,wght@9..40,400..700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600..800&family=DM+Sans:opsz,wght@9..40,400..700&display=swap" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600..800&family=DM+Sans:opsz,wght@9..40,400..700&display=swap"></noscript>
+
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/main.js" defer></script>
+
+  <!-- Datos estructurados: comercio local -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "GroceryStore",
+    "@id": "https://www.verduleriavicky.com.ar/#negocio",
+    "name": "Verdulería La Verdadera",
+    "description": "Verdulería en Alta Gracia, Córdoba. Frutas y verduras frescas de estación.",
+    "url": "https://www.verduleriavicky.com.ar/",
+    "image": "https://www.verduleriavicky.com.ar/img/og-image.png",
+    "logo": "https://www.verduleriavicky.com.ar/img/favicon.svg",
+    "telephone": "+54 351 386-3812",
+    "priceRange": "$",
+    "currenciesAccepted": "ARS",
+    "paymentAccepted": "Efectivo, Transferencia bancaria",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Alta Gracia",
+      "addressRegion": "Córdoba",
+      "addressCountry": "AR"
+    },
+    "areaServed": "Alta Gracia, Córdoba",
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+        "opens": "08:00",
+        "closes": "13:30"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+        "opens": "18:00",
+        "closes": "21:00"
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <!-- Barra de progreso de lectura (CSS scroll-driven, decorativa) -->
+  <div class="scroll-progress" aria-hidden="true"></div>
+
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <!-- =========================================================
+       SPRITE DE PRODUCTOS (ilustraciones SVG decorativas)
+       Se reutilizan con <use href="#p-..."> en toda la página.
+       ========================================================= -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <symbol id="p-tomate" viewBox="0 0 100 100">
+      <ellipse cx="50" cy="57" rx="41" ry="36" fill="#e8452c"/>
+      <ellipse cx="62" cy="62" rx="26" ry="24" fill="#d13a22" opacity=".45"/>
+      <ellipse cx="34" cy="44" rx="11" ry="6" fill="#fff" opacity=".4" transform="rotate(-30 34 44)"/>
+      <path d="M50 22l6 10 12-4-8 10 10 6-13 1-7 10-7-10-13-1 10-6-8-10 12 4z" fill="#3b8a3e"/>
+      <rect x="47" y="9" width="6" height="17" rx="3" fill="#2d6b30"/>
+    </symbol>
+    <symbol id="p-zanahoria" viewBox="0 0 100 100">
+      <path d="M30 32c10-9 31-7 38 4 4 6 2 12-4 18L22 93c-4 4-11-2-7-7z" fill="#f28a1e"/>
+      <path d="M41 45l8 6M33 59l7 5M26 73l6 4" stroke="#c9670c" stroke-width="3" stroke-linecap="round"/>
+      <path d="M62 31c2-12 10-21 21-23-4 10-8 17-15 25zM66 37c10-6 20-7 29-2-10 4-18 6-27 6zM57 29c-2-10 0-18 6-25 2 10 0 18-3 27z" fill="#4caf50"/>
+    </symbol>
+    <symbol id="p-limon" viewBox="0 0 100 100">
+      <path d="M14 52c0-20 18-32 36-32s36 12 36 32-18 32-36 32-36-12-36-32z" fill="#f7d33c"/>
+      <path d="M7 52l9-6v12zM93 52l-9-6v12z" fill="#e8bd1c"/>
+      <ellipse cx="38" cy="40" rx="12" ry="5" fill="#fff" opacity=".5" transform="rotate(-20 38 40)"/>
+      <path d="M58 21c6-9 17-11 24-6-7 6-15 8-24 6z" fill="#4caf50"/>
+    </symbol>
+    <symbol id="p-naranja" viewBox="0 0 100 100">
+      <circle cx="50" cy="50" r="43" fill="#f59e1b"/>
+      <circle cx="50" cy="50" r="36" fill="#fff1d2"/>
+      <g fill="#ffb03b">
+        <path d="M52 47.5L52.2 19.1A31 31 0 0 1 70.3 26.6Z"/>
+        <path d="M52 47.5L52.2 19.1A31 31 0 0 1 70.3 26.6Z" transform="rotate(45 50 50)"/>
+        <path d="M52 47.5L52.2 19.1A31 31 0 0 1 70.3 26.6Z" transform="rotate(90 50 50)"/>
+        <path d="M52 47.5L52.2 19.1A31 31 0 0 1 70.3 26.6Z" transform="rotate(135 50 50)"/>
+        <path d="M52 47.5L52.2 19.1A31 31 0 0 1 70.3 26.6Z" transform="rotate(180 50 50)"/>
+        <path d="M52 47.5L52.2 19.1A31 31 0 0 1 70.3 26.6Z" transform="rotate(225 50 50)"/>
+        <path d="M52 47.5L52.2 19.1A31 31 0 0 1 70.3 26.6Z" transform="rotate(270 50 50)"/>
+        <path d="M52 47.5L52.2 19.1A31 31 0 0 1 70.3 26.6Z" transform="rotate(315 50 50)"/>
+      </g>
+      <circle cx="50" cy="50" r="4" fill="#fff6e3"/>
+    </symbol>
+    <symbol id="p-palta" viewBox="0 0 100 100">
+      <path d="M50 5c18 0 26 22 32 40 8 23-6 50-32 50S10 68 18 45C24 27 32 5 50 5z" fill="#3e6b2a"/>
+      <path d="M50 14c14 0 20 18 25 34 6 18-5 39-25 39S19 66 25 48c5-16 11-34 25-34z" fill="#d4e98f"/>
+      <circle cx="50" cy="59" r="15" fill="#8a5a2b"/>
+      <circle cx="45" cy="54" r="4" fill="#b8844f"/>
+    </symbol>
+    <symbol id="p-frutilla" viewBox="0 0 100 100">
+      <path d="M50 93C29 81 13 61 15 42c2-14 17-18 35-18s33 4 35 18c2 19-14 39-35 51z" fill="#e8344a"/>
+      <g fill="#ffe08a">
+        <ellipse cx="32" cy="44" rx="2" ry="3"/><ellipse cx="50" cy="40" rx="2" ry="3"/>
+        <ellipse cx="68" cy="44" rx="2" ry="3"/><ellipse cx="40" cy="57" rx="2" ry="3"/>
+        <ellipse cx="60" cy="57" rx="2" ry="3"/><ellipse cx="50" cy="71" rx="2" ry="3"/>
+        <ellipse cx="27" cy="58" rx="2" ry="3"/><ellipse cx="73" cy="58" rx="2" ry="3"/>
+      </g>
+      <path d="M50 31L35 19h9l-10-9 14 5 2-11 4 11 14-5-10 9h9z" fill="#3f9b3a"/>
+    </symbol>
+    <symbol id="p-berenjena" viewBox="0 0 100 100">
+      <path d="M61 30c14 6 20 23 13 39-8 22-35 30-51 19S11 60 26 48c10-8 18-22 35-18z" fill="#6a3d8f"/>
+      <ellipse cx="38" cy="62" rx="5" ry="12" fill="#fff" opacity=".22" transform="rotate(40 38 62)"/>
+      <path d="M55 27c5-7 13-9 21-6l-4 6 8 4c-8 3-15 4-21 2z" fill="#4c8a3a"/>
+      <path d="M69 22l10-14" stroke="#4c8a3a" stroke-width="5" stroke-linecap="round"/>
+    </symbol>
+    <symbol id="p-hoja" viewBox="0 0 100 100">
+      <path d="M13 87C9 46 40 11 89 9c2 47-29 80-76 78z" fill="#6cbf4a"/>
+      <path d="M13 87C38 62 58 40 81 17" stroke="#3f8f2a" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <path d="M33 65l-6-18M46 52l-4-20M58 40V24M38 60l19 2M51 47h19" stroke="#3f8f2a" stroke-width="2" stroke-linecap="round"/>
+    </symbol>
+    <symbol id="p-manzana" viewBox="0 0 100 100">
+      <path d="M50 29c-10-8-35-8-39 16-4 23 12 49 27 49 6 0 8-3 12-3s6 3 12 3c15 0 31-26 27-49-4-24-29-24-39-16z" fill="#d93a2b"/>
+      <ellipse cx="29" cy="47" rx="6" ry="11" fill="#fff" opacity=".3"/>
+      <path d="M50 31c0-10 2-16 8-23" stroke="#6b4423" stroke-width="4" fill="none" stroke-linecap="round"/>
+      <path d="M56 18c8-8 21-8 25-2-8 6-17 6-25 2z" fill="#4caf50"/>
+    </symbol>
+    <symbol id="i-hoja-logo" viewBox="0 0 24 24">
+      <path d="M3 21C2 11 9 3 21 3c0 11-7 19-18 18z" fill="currentColor"/>
+      <path d="M3 21C9 15 13 10 18 6" stroke="var(--cream, #fff8ec)" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+    </symbol>
+  </svg>
+
+  <!-- ========================= HEADER ========================= -->
+  <header class="site-header" data-header>
+    <div class="container header-inner">
+      <a class="logo" href="#inicio" aria-label="Verdulería La Verdadera, ir al inicio">
+        <span class="logo-mark" aria-hidden="true"><svg><use href="#i-hoja-logo"/></svg></span>
+        <span class="logo-text"><span class="logo-name">La Verdadera</span><span class="logo-tag">verdulería</span></span>
+      </a>
+      <nav class="main-nav" aria-label="Principal">
+        <ul>
+          <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="#historia">Historia</a></li>
+          <li><a href="#info">Horarios</a></li>
+          <li><a href="#ubicacion">Ubicación</a></li>
+        </ul>
+      </nav>
+      <a class="btn btn-small btn-dark" href="tel:+543513863812">
+        <svg class="ico" aria-hidden="true" viewBox="0 0 24 24"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25c1.1.37 2.3.57 3.6.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z" fill="currentColor"/></svg>
+        <span>Llamar</span>
+      </a>
+    </div>
+  </header>
+
+  <main id="contenido">
+
+    <!-- ========================= HERO ========================= -->
+    <section class="hero" id="inicio" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow" data-reveal>
+            <span class="status-dot" data-status-dot></span>
+            <span data-status-text>Alta Gracia · Córdoba</span>
+          </p>
+
+          <h1 id="hero-title" class="hero-title">
+            <span class="hero-kicker">Verdulería</span>
+            <span class="hero-brand">
+              <span class="sr-only">La Verdadera</span>
+              <span class="brand-article" aria-hidden="true">La</span>
+              <span class="brand-letters" aria-hidden="true"><span style="--i:0">V</span><span style="--i:1">e</span><span style="--i:2">r</span><span style="--i:3">d</span><span style="--i:4">a</span><span style="--i:5">d</span><span style="--i:6">e</span><span style="--i:7">r</span><span style="--i:8">a</span></span>
+            </span>
+            <span class="hero-sub">frutas y verduras <em>frescas</em> en Alta Gracia</span>
+          </h1>
+
+          <p class="hero-lead" data-reveal style="--d:.5s">
+            Color, sabor y atención de barrio. Lo fresco tiene nombre, y es el nuestro.
+          </p>
+
+          <div class="hero-ctas" data-reveal style="--d:.65s">
+            <a class="btn btn-dark btn-big" href="tel:+543513863812">
+              <svg class="ico" aria-hidden="true" viewBox="0 0 24 24"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25c1.1.37 2.3.57 3.6.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z" fill="currentColor"/></svg>
+              Llamar al 351 386-3812
+            </a>
+            <a class="btn btn-lime btn-big" href="https://wa.me/5493513863812?text=Hola!%20Quer%C3%ADa%20hacer%20una%20consulta" target="_blank" rel="noopener">
+              <svg class="ico" aria-hidden="true" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.7a2.7 2.7 0 0 0 1.8-1.3 2.2 2.2 0 0 0 .2-1.3c-.1-.1-.3-.2-.5-.3z" fill="currentColor"/></svg>
+              WhatsApp
+            </a>
+          </div>
+        </div>
+
+        <!-- Composición ilustrada del hero (decorativa) -->
+        <div class="hero-art" aria-hidden="true">
+          <div class="blob"></div>
+          <div class="blob blob-2"></div>
+          <svg class="badge" viewBox="0 0 200 200">
+            <defs><path id="badge-circle" d="M100 100m-78 0a78 78 0 1 1 156 0a78 78 0 1 1-156 0"/></defs>
+            <circle cx="100" cy="100" r="98" fill="#f59e1b"/>
+            <text><textPath href="#badge-circle">FRESCO TODOS LOS DÍAS ✦ ALTA GRACIA ✦ </textPath></text>
+            <g transform="translate(70 70) scale(.6)"><use href="#p-hoja"/></g>
+          </svg>
+          <svg class="prod hp1" style="--r:-12deg;--dl:0s"><use href="#p-palta"/></svg>
+          <svg class="prod hp2" style="--r:10deg;--dl:-1.2s"><use href="#p-tomate"/></svg>
+          <svg class="prod hp3" style="--r:-20deg;--dl:-2.1s"><use href="#p-zanahoria"/></svg>
+          <svg class="prod hp4" style="--r:14deg;--dl:-.6s"><use href="#p-limon"/></svg>
+          <svg class="prod hp5" style="--r:-6deg;--dl:-3s"><use href="#p-frutilla"/></svg>
+          <svg class="prod hp6" style="--r:22deg;--dl:-1.7s"><use href="#p-naranja"/></svg>
+          <svg class="prod hp7" style="--r:-30deg;--dl:-2.6s"><use href="#p-hoja"/></svg>
+        </div>
+      </div>
+
+      <a class="scroll-cue" href="#nosotros" aria-label="Bajar a la siguiente sección"><span></span></a>
+    </section>
+
+    <!-- ========================= MARQUESINA ========================= -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <div class="marquee-group">
+          <span>Frutas</span><svg><use href="#p-frutilla"/></svg>
+          <span>Verduras</span><svg><use href="#p-zanahoria"/></svg>
+          <span>De estación</span><svg><use href="#p-limon"/></svg>
+          <span>Atención de barrio</span><svg><use href="#p-tomate"/></svg>
+          <span>Alta Gracia</span><svg><use href="#p-palta"/></svg>
+        </div>
+        <div class="marquee-group">
+          <span>Frutas</span><svg><use href="#p-frutilla"/></svg>
+          <span>Verduras</span><svg><use href="#p-zanahoria"/></svg>
+          <span>De estación</span><svg><use href="#p-limon"/></svg>
+          <span>Atención de barrio</span><svg><use href="#p-tomate"/></svg>
+          <span>Alta Gracia</span><svg><use href="#p-palta"/></svg>
+        </div>
+      </div>
+    </div>
+
+    <!-- ========================= POR QUÉ LA VERDADERA ========================= -->
+    <section class="section why" id="nosotros" aria-labelledby="why-title">
+      <svg class="deco" data-speed="-0.15" style="--x:4%;--y:8%;--xm:80%;--ym:2%;--s:90px;--r:-20deg" aria-hidden="true"><use href="#p-hoja"/></svg>
+      <svg class="deco deco-desk" data-speed="0.12" style="--x:88%;--y:72%;--s:80px;--r:18deg" aria-hidden="true"><use href="#p-frutilla"/></svg>
+
+      <div class="container">
+        <header class="section-head" data-reveal>
+          <p class="kicker">Nosotros</p>
+          <h2 id="why-title" class="section-title">Elegir bien, <span class="hl hl-lime">todos los días</span></h2>
+        </header>
+
+        <div class="cards">
+          <article class="card card-lime" data-reveal style="--d:.05s">
+            <svg class="card-ico" aria-hidden="true"><use href="#p-hoja"/></svg>
+            <h3>Fresco de verdad</h3>
+            <p>Mercadería seleccionada a mano para que llegue a tu mesa con todo el color y el sabor.</p>
+          </article>
+          <article class="card card-mandarin" data-reveal style="--d:.15s">
+            <svg class="card-ico" aria-hidden="true"><use href="#p-naranja"/></svg>
+            <h3>De estación</h3>
+            <p>Lo mejor de cada temporada, cuando está más rico y a mejor precio.</p>
+          </article>
+          <article class="card card-tomato" data-reveal style="--d:.25s">
+            <svg class="card-ico" aria-hidden="true"><use href="#p-tomate"/></svg>
+            <h3>Atención de barrio</h3>
+            <p>Te conocemos, te aconsejamos y te guardamos lo que te gusta. Así de simple.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================= HISTORIA ========================= -->
+    <section class="section story" id="historia" aria-labelledby="story-title">
+      <!-- Cinta de obra: el local está en armado -->
+      <div class="tape" aria-hidden="true">
+        <div class="tape-track">
+          <span>Local en armado ✦ Muy pronto ✦ Local en armado ✦ Muy pronto ✦ Local en armado ✦ Muy pronto ✦ </span>
+          <span>Local en armado ✦ Muy pronto ✦ Local en armado ✦ Muy pronto ✦ Local en armado ✦ Muy pronto ✦ </span>
+        </div>
+      </div>
+
+      <svg class="deco deco-desk" data-speed="0.18" style="--x:90%;--y:14%;--s:110px;--r:15deg" aria-hidden="true"><use href="#p-naranja"/></svg>
+      <svg class="deco deco-desk" data-speed="-0.1" style="--x:-2%;--y:34%;--s:84px;--r:-25deg" aria-hidden="true"><use href="#p-berenjena"/></svg>
+
+      <div class="container story-grid">
+        <div class="story-copy">
+          <header class="section-head" data-reveal>
+            <p class="kicker kicker-light">Nuestra historia</p>
+            <h2 id="story-title" class="section-title">Un lugar que se está <span class="hl hl-mandarin">armando con ganas</span></h2>
+          </header>
+
+          <!-- EDITAR: historia del local (reemplazar estos párrafos por el texto definitivo del cliente) -->
+          <div class="story-text" data-reveal style="--d:.1s">
+            <p class="story-quote">“Queríamos una verdulería donde dé gusto entrar.”</p>
+            <p>Verdulería La Verdadera nace en Alta Gracia con una idea simple: que comprar frutas y verduras vuelva a ser un momento lindo del día. Producto elegido con cuidado, precios claros y una charla de barrio en el mostrador.</p>
+            <p>Hoy estamos poniendo a punto cada detalle del local. Muy pronto vas a ver acá las fotos de cómo quedó.</p>
+          </div>
+
+          <!-- Línea de tiempo del proyecto -->
+          <ol class="timeline" data-reveal style="--d:.2s">
+            <li class="done"><span class="tl-dot" aria-hidden="true"></span><strong>La idea</strong><span>Nace La Verdadera</span></li>
+            <li class="current"><span class="tl-dot" aria-hidden="true"></span><strong>Armando el local</strong><span>En eso estamos</span></li>
+            <li><span class="tl-dot" aria-hidden="true"></span><strong>¡Abrimos!</strong><span>Muy pronto</span></li>
+          </ol>
+        </div>
+
+        <!-- Galería tipo polaroid. EDITAR: reemplazar cada .photo-placeholder por una <img> (ver README) -->
+        <div class="gallery">
+          <figure class="polaroid" data-reveal style="--d:.05s;--tilt:-4deg">
+            <div class="photo-placeholder" role="img" aria-label="Espacio para una foto del frente del local">
+              <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M4 7h3l2-3h6l2 3h3a1 1 0 0 1 1 1v11a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1zm8 3a4 4 0 1 0 0 8 4 4 0 0 0 0-8z" fill="currentColor"/></svg>
+              <span>Foto próximamente</span>
+            </div>
+            <figcaption>El frente</figcaption>
+          </figure>
+          <figure class="polaroid" data-reveal style="--d:.15s;--tilt:3deg">
+            <div class="photo-placeholder ph-mandarin" role="img" aria-label="Espacio para una foto del interior del local">
+              <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M4 7h3l2-3h6l2 3h3a1 1 0 0 1 1 1v11a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1zm8 3a4 4 0 1 0 0 8 4 4 0 0 0 0-8z" fill="currentColor"/></svg>
+              <span>Foto próximamente</span>
+            </div>
+            <figcaption>Por dentro</figcaption>
+          </figure>
+          <figure class="polaroid" data-reveal style="--d:.25s;--tilt:-2deg">
+            <div class="photo-placeholder ph-tomato" role="img" aria-label="Espacio para una foto de la mercadería">
+              <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M4 7h3l2-3h6l2 3h3a1 1 0 0 1 1 1v11a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1zm8 3a4 4 0 1 0 0 8 4 4 0 0 0 0-8z" fill="currentColor"/></svg>
+              <span>Foto próximamente</span>
+            </div>
+            <figcaption>La mercadería</figcaption>
+          </figure>
+          <figure class="polaroid" data-reveal style="--d:.35s;--tilt:5deg">
+            <div class="photo-placeholder ph-lime" role="img" aria-label="Espacio para una foto del equipo">
+              <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M4 7h3l2-3h6l2 3h3a1 1 0 0 1 1 1v11a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1zm8 3a4 4 0 1 0 0 8 4 4 0 0 0 0-8z" fill="currentColor"/></svg>
+              <span>Foto próximamente</span>
+            </div>
+            <figcaption>El equipo</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================= INFO ÚTIL (BENTO) ========================= -->
+    <section class="section info" id="info" aria-labelledby="info-title">
+      <svg class="deco" data-speed="-0.12" style="--x:92%;--y:4%;--s:96px;--r:30deg" aria-hidden="true"><use href="#p-zanahoria"/></svg>
+      <svg class="deco deco-desk" data-speed="0.14" style="--x:-2%;--y:60%;--s:76px;--r:-10deg" aria-hidden="true"><use href="#p-manzana"/></svg>
+
+      <div class="container">
+        <header class="section-head" data-reveal>
+          <p class="kicker">Info útil</p>
+          <h2 id="info-title" class="section-title">Todo lo que <span class="hl hl-lime">necesitás saber</span></h2>
+        </header>
+
+        <div class="bento">
+          <!-- Horarios -->
+          <article class="tile tile-hours" data-reveal style="--d:.05s">
+            <div class="tile-top">
+              <h3>Horarios</h3>
+              <p class="live-pill" data-status-pill><span class="status-dot" data-status-dot></span><span data-status-text>Lunes a sábado</span></p>
+            </div>
+            <div class="shifts">
+              <div class="shift">
+                <svg class="shift-ico sun" aria-hidden="true" viewBox="0 0 48 48"><circle cx="24" cy="24" r="9" fill="currentColor"/><g stroke="currentColor" stroke-width="3.5" stroke-linecap="round"><path d="M24 4v6M24 38v6M4 24h6M38 24h6M9.9 9.9l4.2 4.2M33.9 33.9l4.2 4.2M9.9 38.1l4.2-4.2M33.9 14.1l4.2-4.2"/></g></svg>
+                <div><span class="shift-label">Mañana</span><span class="shift-time">08:00 – 13:30</span></div>
+              </div>
+              <div class="shift">
+                <svg class="shift-ico moon" aria-hidden="true" viewBox="0 0 48 48"><path d="M30 6a18 18 0 1 0 12 30A16 16 0 0 1 30 6z" fill="currentColor"/></svg>
+                <div><span class="shift-label">Tarde</span><span class="shift-time">18:00 – 21:00</span></div>
+              </div>
+            </div>
+            <!-- Barra del día: franjas abiertas + marcador de la hora actual -->
+            <div class="daybar" aria-hidden="true">
+              <span class="daybar-open" style="--from:8;--to:13.5"></span>
+              <span class="daybar-open" style="--from:18;--to:21"></span>
+              <span class="daybar-now" data-now-marker></span>
+            </div>
+            <div class="daybar-labels" aria-hidden="true"><span style="--h:0">0 h</span><span style="--h:6">6</span><span style="--h:12">12</span><span style="--h:18">18</span><span style="--h:24">24 h</span></div>
+            <p class="tile-note">Lunes a sábado</p>
+          </article>
+
+          <!-- Pagos -->
+          <article class="tile tile-pay" data-reveal style="--d:.15s">
+            <h3>Medios de pago</h3>
+            <ul class="pay-list">
+              <li>
+                <svg aria-hidden="true" viewBox="0 0 48 48"><rect x="4" y="12" width="40" height="24" rx="4" fill="currentColor"/><circle cx="24" cy="24" r="6" fill="var(--mandarin-soft)"/><circle cx="11" cy="24" r="2" fill="var(--mandarin-soft)"/><circle cx="37" cy="24" r="2" fill="var(--mandarin-soft)"/></svg>
+                Efectivo
+              </li>
+              <li>
+                <svg aria-hidden="true" viewBox="0 0 48 48"><rect x="13" y="4" width="22" height="40" rx="5" fill="currentColor"/><rect x="17" y="10" width="14" height="22" rx="2" fill="var(--mandarin-soft)"/><path d="M20 21h8m-3-3 3 3-3 3" stroke="currentColor" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/><circle cx="24" cy="38" r="2" fill="var(--mandarin-soft)"/></svg>
+                Transferencia
+              </li>
+            </ul>
+          </article>
+
+          <!-- Teléfono -->
+          <article class="tile tile-phone" data-reveal style="--d:.25s">
+            <span class="phone-ico" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25c1.1.37 2.3.57 3.6.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z" fill="currentColor"/></svg>
+            </span>
+            <h3>Teléfono</h3>
+            <a class="phone-big" href="tel:+543513863812">351 386-3812</a>
+            <p class="tile-note">Llamanos o escribinos, te respondemos enseguida.</p>
+          </article>
+
+          <!-- Ubicación -->
+          <article class="tile tile-map" id="ubicacion" data-reveal style="--d:.1s">
+            <div class="map-head">
+              <div>
+                <h3>Ubicación</h3>
+                <!-- EDITAR: dirección exacta del local -->
+                <p class="address"><span class="addr-pending">Dirección: muy pronto</span> · Alta Gracia, Córdoba</p>
+              </div>
+              <!-- EDITAR: cuando esté la dirección, reemplazar la query por la dirección o el link de Google Maps del local -->
+              <a class="btn btn-small btn-dark" href="https://www.google.com/maps/search/?api=1&amp;query=Alta+Gracia%2C+C%C3%B3rdoba%2C+Argentina" target="_blank" rel="noopener">Cómo llegar ↗</a>
+            </div>
+            <div class="map-frame">
+              <!-- Ilustración de fondo mientras carga el mapa -->
+              <div class="map-fallback" aria-hidden="true"><span class="map-pin"></span></div>
+              <!-- EDITAR: cambiar q=... por la dirección exacta -->
+              <iframe
+                title="Mapa de Google con la ubicación de Verdulería La Verdadera en Alta Gracia"
+                src="https://www.google.com/maps?q=Alta+Gracia,+C%C3%B3rdoba,+Argentina&amp;z=14&amp;output=embed"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================= CONTACTO / CTA FINAL ========================= -->
+    <section class="section contact" id="contacto" aria-labelledby="contact-title">
+      <svg class="deco" data-speed="0.2" style="--x:6%;--y:12%;--s:100px;--r:-18deg" aria-hidden="true"><use href="#p-limon"/></svg>
+      <svg class="deco deco-desk" data-speed="-0.16" style="--x:86%;--y:66%;--s:120px;--r:12deg" aria-hidden="true"><use href="#p-palta"/></svg>
+      <svg class="deco" data-speed="0.1" style="--x:78%;--y:6%;--s:70px;--r:25deg" aria-hidden="true"><use href="#p-manzana"/></svg>
+
+      <div class="container contact-inner" data-reveal>
+        <p class="kicker kicker-light">Contacto</p>
+        <h2 id="contact-title" class="contact-title">¿Tenés una consulta?<br><span>Llamanos.</span></h2>
+        <a class="phone-giant" href="tel:+543513863812" aria-label="Llamar al 351 386-3812">
+          <span aria-hidden="true">351</span> <span aria-hidden="true">386</span> <span aria-hidden="true">3812</span>
+        </a>
+        <div class="hero-ctas center">
+          <a class="btn btn-cream btn-big" href="tel:+543513863812">Llamar ahora</a>
+          <a class="btn btn-lime btn-big" href="https://wa.me/5493513863812?text=Hola!%20Quer%C3%ADa%20hacer%20una%20consulta" target="_blank" rel="noopener">Escribir por WhatsApp</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========================= FOOTER ========================= -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <a class="logo logo-light" href="#inicio" aria-label="Verdulería La Verdadera, volver al inicio">
+          <span class="logo-mark" aria-hidden="true"><svg><use href="#i-hoja-logo"/></svg></span>
+          <span class="logo-text"><span class="logo-name">La Verdadera</span><span class="logo-tag">verdulería</span></span>
+        </a>
+        <p class="footer-tag">Frutas y verduras frescas en Alta Gracia, Córdoba.</p>
+      </div>
+      <ul class="footer-info">
+        <li><strong>Teléfono:</strong> <a href="tel:+543513863812">351 386-3812</a></li>
+        <li><strong>Horario:</strong> lunes a sábado, 08:00–13:30 y 18:00–21:00</li>
+        <li><strong>Pagos:</strong> efectivo y transferencia</li>
+      </ul>
+    </div>
+    <div class="container footer-bottom">
+      <p>© <span data-year>2026</span> Verdulería La Verdadera · Alta Gracia, Córdoba</p>
+    </div>
+  </footer>
+
+  <!-- Botón flotante de llamada (aparece al pasar el hero) -->
+  <a class="fab" href="tel:+543513863812" aria-label="Llamar a Verdulería La Verdadera" data-fab>
+    <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25c1.1.37 2.3.57 3.6.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z" fill="currentColor"/></svg>
+  </a>
+</body>
+</html>

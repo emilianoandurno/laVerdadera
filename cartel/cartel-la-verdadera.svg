@@ -1,0 +1,217 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 3000 1000" width="3000" height="1000">
+  <!-- Cartel horizontal (proporción 3:1) — Verdulería y Pollería La Verdadera
+       Identidad tomada del sitio: paleta de producto, Bricolage Grotesque / DM Sans,
+       bordes de tinta y sombras duras estilo sticker. -->
+  <defs>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600..800&amp;family=DM+Sans:opsz,wght@9..40,700&amp;display=block");
+      .display { font-family: "Bricolage Grotesque", "Arial Black", sans-serif; font-weight: 800; }
+      .body { font-family: "DM Sans", Arial, sans-serif; font-weight: 700; }
+    </style>
+
+    <!-- sombra suave de los productos (más realista) -->
+    <filter id="sombra" x="-20%" y="-20%" width="150%" height="150%">
+      <feDropShadow dx="8" dy="12" stdDeviation="7" flood-color="#14261a" flood-opacity=".35"/>
+    </filter>
+
+    <!-- Productos con volumen: degradés, brillos y texturas -->
+    <filter id="blur1" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="1.6"/></filter>
+    <filter id="blur3" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="3"/></filter>
+
+    <radialGradient id="g-tomate" cx=".36" cy=".38" r=".72">
+      <stop offset="0" stop-color="#ff8f6b"/><stop offset=".32" stop-color="#ef4a2b"/>
+      <stop offset=".78" stop-color="#c22812"/><stop offset="1" stop-color="#86170a"/>
+    </radialGradient>
+    <linearGradient id="g-verde" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#7cc457"/><stop offset=".55" stop-color="#3f8f2a"/><stop offset="1" stop-color="#245a18"/>
+    </linearGradient>
+    <linearGradient id="g-hoja" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0" stop-color="#245a18"/><stop offset=".5" stop-color="#4f9e34"/><stop offset="1" stop-color="#93d36a"/>
+    </linearGradient>
+    <linearGradient id="g-zanahoria" x1="0" y1="0" x2="1" y2=".8">
+      <stop offset="0" stop-color="#b9500a"/><stop offset=".3" stop-color="#f38a22"/><stop offset=".48" stop-color="#ffb466"/>
+      <stop offset=".68" stop-color="#ee7f16"/><stop offset="1" stop-color="#a84606"/>
+    </linearGradient>
+    <radialGradient id="g-pollo" cx=".58" cy=".34" r=".78">
+      <stop offset="0" stop-color="#ffd791"/><stop offset=".3" stop-color="#eba348"/>
+      <stop offset=".68" stop-color="#c76d1e"/><stop offset="1" stop-color="#7d3d0d"/>
+    </radialGradient>
+    <linearGradient id="g-hueso" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fffdf6"/><stop offset=".6" stop-color="#f1e6cf"/><stop offset="1" stop-color="#cdbb98"/>
+    </linearGradient>
+    <radialGradient id="g-huevo" cx=".4" cy=".34" r=".75">
+      <stop offset="0" stop-color="#fcf1e2"/><stop offset=".42" stop-color="#eccfa6"/>
+      <stop offset=".82" stop-color="#cfa372"/><stop offset="1" stop-color="#a77b4b"/>
+    </radialGradient>
+    <radialGradient id="g-limon" cx=".38" cy=".34" r=".75">
+      <stop offset="0" stop-color="#fffbc4"/><stop offset=".38" stop-color="#fbe34c"/>
+      <stop offset=".8" stop-color="#eec01b"/><stop offset="1" stop-color="#c39506"/>
+    </radialGradient>
+    <radialGradient id="g-palta-cascara" cx=".4" cy=".35" r=".8">
+      <stop offset="0" stop-color="#557a30"/><stop offset=".7" stop-color="#2c4a18"/><stop offset="1" stop-color="#18290c"/>
+    </radialGradient>
+    <radialGradient id="g-palta-pulpa" cx=".5" cy=".6" r=".6">
+      <stop offset="0" stop-color="#f7f3b0"/><stop offset=".5" stop-color="#e2ea8c"/>
+      <stop offset=".85" stop-color="#b3cf63"/><stop offset="1" stop-color="#7ea33a"/>
+    </radialGradient>
+    <radialGradient id="g-carozo" cx=".36" cy=".32" r=".75">
+      <stop offset="0" stop-color="#d9a46a"/><stop offset=".5" stop-color="#9c6331"/><stop offset="1" stop-color="#5a3315"/>
+    </radialGradient>
+    <radialGradient id="g-frutilla" cx=".4" cy=".34" r=".75">
+      <stop offset="0" stop-color="#ff7d89"/><stop offset=".4" stop-color="#e8213f"/>
+      <stop offset=".8" stop-color="#b3122c"/><stop offset="1" stop-color="#760a1b"/>
+    </radialGradient>
+
+    <symbol id="p-tomate" viewBox="0 0 100 100">
+      <path d="M50 24c-8-3-20-2-29 5C11 37 7 49 8 61c2 18 19 32 42 32s40-14 42-32c1-12-3-24-13-32-9-7-21-8-29-5z" fill="url(#g-tomate)"/>
+      <path d="M50 27c-6 10-8 22-5 36M50 27c8 9 12 21 11 34M37 30c-8 8-12 19-11 30M64 31c7 7 10 16 10 25" stroke="#8f1a0b" stroke-width="1.6" fill="none" opacity=".28" stroke-linecap="round"/>
+      <ellipse cx="32" cy="45" rx="12" ry="6" fill="#fff" opacity=".55" transform="rotate(-38 32 45)" filter="url(#blur1)"/>
+      <ellipse cx="30" cy="43" rx="4.5" ry="2.2" fill="#fff" opacity=".9" transform="rotate(-38 30 43)"/>
+      <path d="M50 31c-4 3-9 5-15 5 4-2 8-5 11-8-5 0-9-2-12-6 5 1 9 1 13 0-2-4-2-8 0-12 2 4 4 7 6 9 3-3 6-5 11-6-2 3-4 6-6 8 4 0 8 1 12 4-4 1-8 1-11 1 3 3 5 6 6 10-5-2-9-4-11-7z" fill="url(#g-verde)"/>
+      <path d="M50 24c-1-6 0-11 3-15" stroke="#3a6a22" stroke-width="5" fill="none" stroke-linecap="round"/>
+      <path d="M50 24c-1-6 0-11 3-15" stroke="#7ab84c" stroke-width="1.6" fill="none" stroke-linecap="round" opacity=".7"/>
+    </symbol>
+
+    <symbol id="p-zanahoria" viewBox="0 0 100 100">
+      <g fill="url(#g-verde)">
+        <path d="M62 31c-1-9 2-18 8-25 1 4 0 7-2 9 3-2 6-3 8-2-3 3-6 6-9 8 3 0 6 1 7 3-4 1-8 2-11 2l-1 5z"/>
+        <path d="M62 31c-1-9 2-18 8-25 1 4 0 7-2 9 3-2 6-3 8-2-3 3-6 6-9 8 3 0 6 1 7 3-4 1-8 2-11 2l-1 5z" transform="rotate(38 63 32)"/>
+        <path d="M62 31c-1-9 2-18 8-25 1 4 0 7-2 9 3-2 6-3 8-2-3 3-6 6-9 8 3 0 6 1 7 3-4 1-8 2-11 2l-1 5z" transform="rotate(-32 63 32)"/>
+        <path d="M62 31c-1-9 2-18 8-25 1 4 0 7-2 9 3-2 6-3 8-2-3 3-6 6-9 8 3 0 6 1 7 3-4 1-8 2-11 2l-1 5z" transform="rotate(72 63 32) scale(.9)"/>
+      </g>
+      <path d="M28 32c12-10 32-8 39 4 4 7 1 13-5 19L22 92c-4 4-10-1-7-6z" fill="url(#g-zanahoria)"/>
+      <path d="M40 43q4 4 10 5M32 55q4 3 9 4M27 67q3 3 8 4M22 78q2 2 6 3M52 38q3 2 7 2M46 50q2 2 6 2" stroke="#9a4205" stroke-width="1.5" fill="none" opacity=".55" stroke-linecap="round"/>
+      <path d="M40 45q4 3 9 4M32 57q4 3 8 3M27 69q3 2 7 3" stroke="#ffd2a0" stroke-width="1" fill="none" opacity=".6" stroke-linecap="round"/>
+      <path d="M36 36c7-4 16-5 22-2" stroke="#fff" stroke-width="3" fill="none" opacity=".35" stroke-linecap="round" filter="url(#blur1)"/>
+    </symbol>
+
+    <symbol id="p-limon" viewBox="0 0 100 100">
+      <path d="M14 52c0-20 18-32 36-32s36 12 36 32-18 32-36 32-36-12-36-32z" fill="url(#g-limon)"/>
+      <path d="M8 52c2-4 5-6 9-7v14c-4-1-7-3-9-7zM92 52c-2-4-5-6-9-7v14c4-1 7-3 9-7z" fill="#e2b210"/>
+      <g fill="#c39506" opacity=".22">
+        <circle cx="30" cy="58" r=".9"/><circle cx="40" cy="66" r=".9"/><circle cx="55" cy="70" r=".9"/><circle cx="66" cy="60" r=".9"/>
+        <circle cx="72" cy="46" r=".9"/><circle cx="60" cy="34" r=".9"/><circle cx="48" cy="50" r=".9"/><circle cx="24" cy="46" r=".9"/>
+        <circle cx="36" cy="74" r=".9"/><circle cx="62" cy="78" r=".9"/><circle cx="76" cy="66" r=".9"/><circle cx="44" cy="30" r=".9"/>
+      </g>
+      <ellipse cx="36" cy="38" rx="13" ry="5" fill="#fff" opacity=".6" transform="rotate(-20 36 38)" filter="url(#blur1)"/>
+      <path d="M58 21c6-9 17-11 24-6-7 6-15 8-24 6z" fill="url(#g-verde)"/>
+      <path d="M59 21c7-3 14-5 22-6" stroke="#c8eaa0" stroke-width="1" fill="none" opacity=".7"/>
+    </symbol>
+
+    <symbol id="p-palta" viewBox="0 0 100 100">
+      <path d="M50 5c18 0 26 22 32 40 8 23-6 50-32 50S10 68 18 45C24 27 32 5 50 5z" fill="url(#g-palta-cascara)"/>
+      <path d="M50 12c14 0 21 19 26 35 6 19-5 41-26 41S18 66 24 47c5-16 12-35 26-35z" fill="url(#g-palta-pulpa)"/>
+      <path d="M50 12c14 0 21 19 26 35 6 19-5 41-26 41S18 66 24 47c5-16 12-35 26-35z" fill="none" stroke="#6f9a2f" stroke-width="2" opacity=".6"/>
+      <circle cx="50" cy="60" r="16" fill="#4a2a10" opacity=".35" filter="url(#blur1)"/>
+      <circle cx="50" cy="59" r="15" fill="url(#g-carozo)"/>
+      <ellipse cx="44" cy="53" rx="5" ry="3" fill="#fff" opacity=".45" transform="rotate(-30 44 53)" filter="url(#blur1)"/>
+    </symbol>
+
+    <symbol id="p-hoja" viewBox="0 0 100 100">
+      <path d="M13 87C9 46 40 11 89 9c2 47-29 80-76 78z" fill="url(#g-hoja)"/>
+      <path d="M13 87C38 62 58 40 81 17" stroke="#d5f0b4" stroke-width="2.2" fill="none" stroke-linecap="round" opacity=".75"/>
+      <path d="M30 68c-4-6-5-13-4-20M42 56c-3-7-3-15-1-22M54 44c-2-6-1-13 2-19M36 62c7 1 14 0 21-3M49 49c7 0 13-2 19-5M61 36c6-1 11-3 15-7" stroke="#c4e89e" stroke-width="1.2" fill="none" stroke-linecap="round" opacity=".55"/>
+      <path d="M40 32c10-10 25-17 40-19" stroke="#fff" stroke-width="3" fill="none" opacity=".25" stroke-linecap="round" filter="url(#blur1)"/>
+    </symbol>
+
+    <symbol id="p-frutilla" viewBox="0 0 100 100">
+      <path d="M50 93C29 81 13 61 15 42c2-14 17-18 35-18s33 4 35 18c2 19-14 39-35 51z" fill="url(#g-frutilla)"/>
+      <g id="semilla">
+        <ellipse cx="0" cy="0" rx="2.6" ry="3.6" fill="#7a0a1c" opacity=".45"/>
+        <ellipse cx="0" cy="-.4" rx="1.3" ry="2.2" fill="#f6d36a"/>
+      </g>
+      <use href="#semilla" x="30" y="42"/><use href="#semilla" x="42" y="38"/><use href="#semilla" x="56" y="38"/><use href="#semilla" x="69" y="42"/>
+      <use href="#semilla" x="24" y="54"/><use href="#semilla" x="36" y="52"/><use href="#semilla" x="50" y="50"/><use href="#semilla" x="63" y="52"/>
+      <use href="#semilla" x="75" y="55"/><use href="#semilla" x="31" y="65"/><use href="#semilla" x="44" y="63"/><use href="#semilla" x="57" y="63"/>
+      <use href="#semilla" x="69" y="66"/><use href="#semilla" x="40" y="75"/><use href="#semilla" x="52" y="75"/><use href="#semilla" x="62" y="76"/>
+      <use href="#semilla" x="47" y="85"/>
+      <ellipse cx="32" cy="45" rx="9" ry="5" fill="#fff" opacity=".45" transform="rotate(-35 32 45)" filter="url(#blur1)"/>
+      <path d="M50 31c-5 3-12 4-19 3 5-2 9-4 12-7-6-2-10-5-13-10 6 2 11 3 15 3-1-5 0-9 3-13 1 5 2 9 3 12 3-4 7-7 12-8-2 5-4 8-7 11 5 0 10 2 14 6-5 0-10 0-14-1 3 3 4 6 5 10-5-2-9-4-11-6z" fill="url(#g-verde)"/>
+    </symbol>
+
+    <symbol id="p-pollo" viewBox="0 0 100 100">
+      <path d="M44 56L24 76" stroke="url(#g-hueso)" stroke-width="10" stroke-linecap="round"/>
+      <path d="M14 71c-4 4-3 10 2 12 1 5 7 6 10 2 3-3 2-7-1-9l-5-6c-2-1-4-1-6 1z" fill="url(#g-hueso)"/>
+      <path d="M16 83c2 1 5 1 7-1" stroke="#b9a37c" stroke-width="1.4" fill="none" opacity=".7" stroke-linecap="round"/>
+      <path d="M38 62c-6-10-6-24 4-37 12-16 36-22 48-8s4 38-14 48c-13 7-28 8-38-3z" fill="url(#g-pollo)"/>
+      <path d="M38 62c-3 1-5 4-6 7 3 1 7 0 10-3z" fill="#9a4c14"/>
+      <g fill="#7a3a0c" opacity=".22" filter="url(#blur1)">
+        <ellipse cx="70" cy="58" rx="9" ry="5" transform="rotate(-30 70 58)"/>
+        <ellipse cx="48" cy="52" rx="6" ry="4"/>
+        <ellipse cx="80" cy="36" rx="4" ry="7"/>
+      </g>
+      <g fill="#a3561a" opacity=".3" filter="url(#blur1)">
+        <ellipse cx="54" cy="44" rx="3" ry="2"/><ellipse cx="66" cy="47" rx="2.5" ry="1.6"/><ellipse cx="60" cy="56" rx="3.2" ry="1.8"/>
+        <ellipse cx="74" cy="40" rx="2" ry="1.5"/><ellipse cx="47" cy="38" rx="2.2" ry="1.4"/><ellipse cx="78" cy="50" rx="2.4" ry="1.6"/>
+      </g>
+      <ellipse cx="62" cy="28" rx="14" ry="6" fill="#fff" opacity=".5" transform="rotate(-35 62 28)" filter="url(#blur1)"/>
+      <ellipse cx="60" cy="27" rx="5" ry="2" fill="#fff" opacity=".85" transform="rotate(-35 60 27)"/>
+    </symbol>
+
+    <symbol id="p-huevo" viewBox="0 0 100 100">
+      <path d="M50 6c20 0 35 30 35 52S70 94 50 94 15 80 15 58 30 6 50 6z" fill="url(#g-huevo)"/>
+      <g fill="#9c6b3c" opacity=".35">
+        <circle cx="62" cy="40" r=".9"/><circle cx="70" cy="60" r="1.1"/><circle cx="56" cy="74" r=".8"/><circle cx="40" cy="70" r="1"/>
+        <circle cx="66" cy="78" r=".9"/><circle cx="74" cy="48" r=".7"/><circle cx="30" cy="62" r=".8"/><circle cx="48" cy="84" r=".9"/>
+      </g>
+      <ellipse cx="36" cy="36" rx="8" ry="15" fill="#fff" opacity=".6" transform="rotate(22 36 36)" filter="url(#blur3)"/>
+    </symbol>
+
+    <path id="badge-circle" d="M100 100m-78 0a78 78 0 1 1 156 0a78 78 0 1 1-156 0"/>
+  </defs>
+
+  <!-- Fondo -->
+  <rect width="3000" height="1000" fill="#fff8ec"/>
+
+  <!-- Marco sticker: borde de tinta + sombra dura -->
+  <rect x="48" y="48" width="2904" height="904" rx="64" fill="#14261a"/>
+  <rect x="34" y="34" width="2900" height="900" rx="64" fill="#fffdf8" stroke="#14261a" stroke-width="10"/>
+
+  <!-- Manchas de color detrás de los productos (como los blobs del hero) -->
+  <circle cx="2500" cy="430" r="310" fill="#e6f5c9" stroke="#14261a" stroke-width="6"/>
+  <circle cx="2740" cy="570" r="160" fill="#ffe7c2" stroke="#14261a" stroke-width="6"/>
+
+  <!-- Texto -->
+  <text class="display" x="140" y="262" font-size="112" letter-spacing="4" fill="#2f6b3f">VERDULERÍA Y POLLERÍA</text>
+
+  <!-- Nombre en una sola línea -->
+  <g class="display" font-size="340" letter-spacing="-4">
+    <!-- sombra dura -->
+    <text x="151" y="663" fill="#14261a" stroke="#14261a" stroke-width="15" stroke-linejoin="round">La Verdadera</text>
+    <!-- letras de colores: trazo detrás del relleno, como en la web -->
+    <text x="140" y="652" stroke="#14261a" stroke-width="15" stroke-linejoin="round" paint-order="stroke fill"><tspan fill="#6a3d8f">L</tspan><tspan fill="#2f6b3f">a</tspan> <tspan fill="#1d4a2f">V</tspan><tspan fill="#d63a22">e</tspan><tspan fill="#c46f00">r</tspan><tspan fill="#6a3d8f">d</tspan><tspan fill="#2f6b3f">a</tspan><tspan fill="#1d4a2f">d</tspan><tspan fill="#d63a22">e</tspan><tspan fill="#c46f00">r</tspan><tspan fill="#6a3d8f">a</tspan></text>
+  </g>
+
+  <!-- Productos -->
+  <g filter="url(#sombra)">
+    <use href="#p-hoja" x="2230" y="130" width="180" height="180" transform="rotate(-25 2320 220)"/>
+    <use href="#p-tomate" x="2400" y="110" width="250" height="250" transform="rotate(10 2525 235)"/>
+    <use href="#p-pollo" x="2250" y="320" width="330" height="330" transform="rotate(-8 2415 485)"/>
+    <use href="#p-huevo" x="2560" y="400" width="190" height="190" transform="rotate(14 2655 495)"/>
+    <use href="#p-zanahoria" x="2610" y="160" width="230" height="230" transform="rotate(20 2725 275)"/>
+    <use href="#p-limon" x="2170" y="600" width="160" height="160" transform="rotate(-14 2250 680)"/>
+    <use href="#p-palta" x="2470" y="580" width="170" height="170" transform="rotate(-12 2555 665)"/>
+    <use href="#p-frutilla" x="2700" y="600" width="140" height="140" transform="rotate(10 2770 670)"/>
+  </g>
+
+  <!-- Sello "fresco todos los días" (mismo que el hero) -->
+  <g transform="translate(1940 70) scale(1.25)">
+    <circle cx="100" cy="100" r="98" fill="#f59e1b" stroke="#14261a" stroke-width="4"/>
+    <text class="display" font-size="15.5" letter-spacing="2.2" fill="#14261a"><textPath href="#badge-circle">FRESCO TODOS LOS DÍAS ✦ ALTA GRACIA ✦ </textPath></text>
+    <use href="#p-hoja" x="70" y="70" width="60" height="60"/>
+  </g>
+
+  <!-- Franja inferior -->
+  <path d="M44 770h2880v100a54 54 0 0 1-54 54H98a54 54 0 0 1-54-54z" fill="#1d4a2f"/>
+  <path d="M44 770h2880" stroke="#14261a" stroke-width="10"/>
+  <text class="display" x="140" y="872" font-size="80" letter-spacing="3" fill="#fff8ec">FRUTAS <tspan fill="#a6d94f">✦</tspan> VERDURAS <tspan fill="#a6d94f">✦</tspan> POLLO FRESCO</text>
+
+  <!-- Teléfono / WhatsApp -->
+  <g transform="translate(2190 805)">
+    <rect width="660" height="96" rx="48" fill="#a6d94f" stroke="#14261a" stroke-width="6"/>
+    <g transform="translate(36 18) scale(2.5)" fill="#14261a">
+      <path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.7a2.7 2.7 0 0 0 1.8-1.3 2.2 2.2 0 0 0 .2-1.3c-.1-.1-.3-.2-.5-.3z"/>
+    </g>
+    <text class="display" x="120" y="70" font-size="66" letter-spacing="1" fill="#14261a">351 386-3812</text>
+  </g>
+</svg>

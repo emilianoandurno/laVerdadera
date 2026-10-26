@@ -1,0 +1,14 @@
+{
+  "name": "Verdulería La Verdadera",
+  "short_name": "La Verdadera",
+  "description": "Frutas y verduras frescas en Alta Gracia, Córdoba.",
+  "lang": "es-AR",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fff8ec",
+  "theme_color": "#1d4a2f",
+  "icons": [
+    { "src": "img/favicon.svg", "sizes": "any", "type": "image/svg+xml" },
+    { "src": "img/apple-touch-icon.png", "sizes": "180x180", "type": "image/png" }
+  ]
+}
