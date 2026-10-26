@@ -638,6 +638,8 @@ section[id] { scroll-margin-top: 72px; }
   .main-nav { display: block; }
   .hero { padding: 40px 0 120px; min-height: calc(100svh - 68px); display: flex; align-items: center; }
   .hero-grid { grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr); gap: 40px; width: min(1200px, 100% - 32px); }
+  /* en dos columnas el nombre se mide contra su columna, no contra toda la pantalla */
+  .hero-brand { font-size: clamp(3.4rem, 9.4vw, 7.4rem); }
   .scroll-cue { display: block; }
   .story-grid { grid-template-columns: 1fr 1fr; gap: 72px; }
 }
