@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <!-- Imagen para compartir (Open Graph) — se exporta a og-image.png -->
+  <defs>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600..800&amp;display=block");
+      .d { font-family: "Bricolage Grotesque", "Arial Black", sans-serif; font-weight: 800; }
+    </style>
+    <filter id="sombra" x="-20%" y="-20%" width="150%" height="150%"><feDropShadow dx="4" dy="5" stdDeviation="0" flood-color="#14261a" flood-opacity=".9"/></filter>
+    <symbol id="p-palta" viewBox="0 0 100 100">
+      <path d="M50 5c18 0 26 22 32 40 8 23-6 50-32 50S10 68 18 45C24 27 32 5 50 5z" fill="#3e6b2a"/>
+      <path d="M50 14c14 0 20 18 25 34 6 18-5 39-25 39S19 66 25 48c5-16 11-34 25-34z" fill="#d4e98f"/>
+      <circle cx="50" cy="59" r="15" fill="#8a5a2b"/>
+      <circle cx="45" cy="54" r="4" fill="#b8844f"/>
+    </symbol>
+    <symbol id="p-tomate" viewBox="0 0 100 100">
+      <ellipse cx="50" cy="57" rx="41" ry="36" fill="#e8452c"/>
+      <ellipse cx="62" cy="62" rx="26" ry="24" fill="#d13a22" opacity=".45"/>
+      <ellipse cx="34" cy="44" rx="11" ry="6" fill="#fff" opacity=".4" transform="rotate(-30 34 44)"/>
+      <path d="M50 22l6 10 12-4-8 10 10 6-13 1-7 10-7-10-13-1 10-6-8-10 12 4z" fill="#3b8a3e"/>
+      <rect x="47" y="9" width="6" height="17" rx="3" fill="#2d6b30"/>
+    </symbol>
+    <symbol id="p-zanahoria" viewBox="0 0 100 100">
+      <path d="M30 32c10-9 31-7 38 4 4 6 2 12-4 18L22 93c-4 4-11-2-7-7z" fill="#f28a1e"/>
+      <path d="M41 45l8 6M33 59l7 5M26 73l6 4" stroke="#c9670c" stroke-width="3" stroke-linecap="round"/>
+      <path d="M62 31c2-12 10-21 21-23-4 10-8 17-15 25zM66 37c10-6 20-7 29-2-10 4-18 6-27 6zM57 29c-2-10 0-18 6-25 2 10 0 18-3 27z" fill="#4caf50"/>
+    </symbol>
+    <symbol id="p-limon" viewBox="0 0 100 100">
+      <path d="M14 52c0-20 18-32 36-32s36 12 36 32-18 32-36 32-36-12-36-32z" fill="#f7d33c"/>
+      <path d="M7 52l9-6v12zM93 52l-9-6v12z" fill="#e8bd1c"/>
+      <ellipse cx="38" cy="40" rx="12" ry="5" fill="#fff" opacity=".5" transform="rotate(-20 38 40)"/>
+      <path d="M58 21c6-9 17-11 24-6-7 6-15 8-24 6z" fill="#4caf50"/>
+    </symbol>
+    <symbol id="p-frutilla" viewBox="0 0 100 100">
+      <path d="M50 93C29 81 13 61 15 42c2-14 17-18 35-18s33 4 35 18c2 19-14 39-35 51z" fill="#e8344a"/>
+      <g fill="#ffe08a">
+        <ellipse cx="32" cy="44" rx="2" ry="3"/><ellipse cx="50" cy="40" rx="2" ry="3"/>
+        <ellipse cx="68" cy="44" rx="2" ry="3"/><ellipse cx="40" cy="57" rx="2" ry="3"/>
+        <ellipse cx="60" cy="57" rx="2" ry="3"/><ellipse cx="50" cy="71" rx="2" ry="3"/>
+        <ellipse cx="27" cy="58" rx="2" ry="3"/><ellipse cx="73" cy="58" rx="2" ry="3"/>
+      </g>
+      <path d="M50 31L35 19h9l-10-9 14 5 2-11 4 11 14-5-10 9h9z" fill="#3f9b3a"/>
+    </symbol>
+    <symbol id="p-pollo" viewBox="0 0 100 100">
+      <path d="M38 66L17 87" stroke="#fff6e3" stroke-width="10" stroke-linecap="round"/>
+      <circle cx="12" cy="83" r="7" fill="#fff6e3"/>
+      <circle cx="21" cy="92" r="7" fill="#fff6e3"/>
+      <path d="M33 63C38 50 44 34 56 22c10-10 26-12 34-2 8 10 4 26-8 36-14 10-32 14-43 13z" fill="#e3922f"/>
+      <path d="M39 69c11 1 29-3 43-13 12-10 16-26 8-36 6 16-2 32-18 40-12 6-24 8-33 9z" fill="#c4701c"/>
+      <path d="M33 63c1 3 3 5 6 6" stroke="#b9661a" stroke-width="4" fill="none" stroke-linecap="round"/>
+      <ellipse cx="68" cy="28" rx="12" ry="5" fill="#fff" opacity=".45" transform="rotate(-38 68 28)"/>
+    </symbol>
+    <symbol id="p-pollo-entero" viewBox="0 0 100 100">
+      <path d="M6 70c0-21 20-36 44-36s44 15 44 36c0 9-7 15-16 15H22C13 85 6 79 6 70z" fill="#e3922f"/>
+      <path d="M6 70c0 9 7 15 16 15h56c9 0 16-6 16-15-4 6-10 9-18 9H24c-8 0-14-3-18-9z" fill="#c4701c"/>
+      <path d="M12 66c4-10 15-14 25-9-3 9-13 14-25 9z" fill="#c4701c" opacity=".75"/>
+      <ellipse cx="28" cy="48" rx="12" ry="4.5" fill="#fff" opacity=".4" transform="rotate(-18 28 48)"/>
+      <g transform="translate(56 56) rotate(118) scale(.5) translate(-64 -42)"><use href="#p-pollo" width="100" height="100"/></g>
+      <g transform="translate(74 60) rotate(152) scale(.5) translate(-64 -42)"><use href="#p-pollo" width="100" height="100"/></g>
+    </symbol>
+    <symbol id="p-hoja" viewBox="0 0 100 100">
+      <path d="M13 87C9 46 40 11 89 9c2 47-29 80-76 78z" fill="#6cbf4a"/>
+      <path d="M13 87C38 62 58 40 81 17" stroke="#3f8f2a" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <path d="M33 65l-6-18M46 52l-4-20M58 40V24M38 60l19 2M51 47h19" stroke="#3f8f2a" stroke-width="2" stroke-linecap="round"/>
+    </symbol>
+  </defs>
+  <rect width="1200" height="630" fill="#fff8ec"/>
+  <path d="M955 52c120 6 210 98 214 226 5 140-80 270-222 292-136 21-238-60-246-196-8-150 112-330 254-322z" fill="#ffe7c2" stroke="#14261a" stroke-width="3"/>
+  <path d="M930 70c138-6 236 96 228 236-8 128-110 236-246 236-138 0-232-104-226-236 6-140 106-230 244-236z" fill="#e6f5c9" stroke="#14261a" stroke-width="3"/>
+  <g filter="url(#sombra)">
+    <use href="#p-frutilla" x="720" y="70" width="95" height="95" transform="rotate(-8 767.5 117.5)"/>
+    <use href="#p-palta" x="740" y="175" width="140" height="140" transform="rotate(-12 810.0 245.0)"/>
+    <use href="#p-tomate" x="960" y="80" width="150" height="150" transform="rotate(10 1035.0 155.0)"/>
+    <use href="#p-hoja" x="870" y="150" width="100" height="100" transform="rotate(-28 920.0 200.0)"/>
+    <use href="#p-pollo" x="860" y="40" width="120" height="120" transform="rotate(18 920.0 100.0)"/>
+    <use href="#p-pollo-entero" x="800" y="320" width="210" height="210" transform="rotate(-6 905.0 425.0)"/>
+    <use href="#p-zanahoria" x="1020" y="270" width="150" height="150" transform="rotate(-20 1095.0 345.0)"/>
+    <use href="#p-limon" x="730" y="420" width="120" height="120" transform="rotate(14 790.0 480.0)"/>
+  </g>
+  <text class="d" x="64" y="150" font-size="46" fill="#2f6b3f">Verdulería y Pollería</text>
+  <text class="d" x="64" y="238" font-size="84" letter-spacing="-2" fill="#14261a">La</text>
+  <g class="d" font-size="140" letter-spacing="-5">
+    <text x="70" y="378" fill="#14261a" stroke="#14261a" stroke-width="8" stroke-linejoin="round">Verdadera</text>
+    <text x="64" y="372" stroke="#14261a" stroke-width="8" stroke-linejoin="round" paint-order="stroke fill"><tspan fill="#1d4a2f">V</tspan><tspan fill="#d63a22">e</tspan><tspan fill="#c46f00">r</tspan><tspan fill="#6a3d8f">d</tspan><tspan fill="#2f6b3f">a</tspan><tspan fill="#1d4a2f">d</tspan><tspan fill="#d63a22">e</tspan><tspan fill="#c46f00">r</tspan><tspan fill="#6a3d8f">a</tspan></text>
+  </g>
+  <text class="d" font-size="32" fill="#14261a"><tspan x="64" y="444">Frutas, verduras y pollo fresco en</tspan><tspan x="64" y="484">Villa Parque Santa Ana, Córdoba</tspan></text>
+  <g transform="translate(64 522)">
+    <rect x="4" y="5" width="300" height="64" rx="32" fill="#14261a"/>
+    <rect width="300" height="64" rx="32" fill="#1d4a2f" stroke="#14261a" stroke-width="3"/>
+    <g transform="translate(26 18) scale(1.2)" fill="#fff8ec"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25c1.1.37 2.3.57 3.6.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></g>
+    <text class="d" x="66" y="43" font-size="30" fill="#fff8ec">2901 41-4824</text>
+  </g>
+</svg>
