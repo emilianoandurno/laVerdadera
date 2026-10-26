@@ -55,7 +55,7 @@ Están en tres lugares:
 - La configuración `HOURS` al principio de `js/main.js`, que calcula "Abierto ahora / Cerrado" con la hora de Córdoba. Los días van de `0` (domingo) a `6` (sábado).
 
 ### Teléfono
-Buscá `3513863812` en `index.html` y reemplazá todas las apariciones (links `tel:` y `wa.me`).
+Buscá `2901414824` en `index.html` y reemplazá todas las apariciones (links `tel:` y `wa.me`).
 
 ### Dominio
 Reemplazá `https://www.verduleriavicky.com.ar` en `index.html`, `robots.txt` y `sitemap.xml`.
