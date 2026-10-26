@@ -120,6 +120,7 @@
         var rect = el.parentElement.getBoundingClientRect();
         if (rect.bottom < 0 || rect.top > vh) return; // fuera de pantalla: no calcular
         var offset = (rect.top + rect.height / 2 - vh / 2) * Number(el.dataset.speed);
+        offset = Math.max(-8, Math.min(8, offset)); // poco recorrido: que no se meta bajo el contenido ni se corte en el borde
         el.style.translate = '0 ' + offset.toFixed(1) + 'px';
       });
       ticking = false;
