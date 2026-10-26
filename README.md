@@ -6,7 +6,7 @@ Sitio estático en HTML, CSS y JS puro, sin dependencias ni proceso de build. Se
 index.html            Contenido, SEO, datos estructurados e ilustraciones SVG (sprite)
 css/styles.css        Todo el diseño y las animaciones (tokens de marca al principio)
 js/main.js            Animaciones al hacer scroll, parallax, estado abierto/cerrado
-img/                  favicon.svg, apple-touch-icon.png, og-image.png (imagen para redes)
+img/                  favicon.svg, apple-touch-icon.png, og-image-v2.png (imagen para redes; fuente editable en og-image.svg)
 img/local/            Fotos del local (vacía por ahora)
 manifest.webmanifest, robots.txt, sitemap.xml
 ```
