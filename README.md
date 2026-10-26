@@ -58,7 +58,7 @@ Están en tres lugares:
 Buscá `2901414824` en `index.html` y reemplazá todas las apariciones (links `tel:` y `wa.me`).
 
 ### Dominio
-Reemplazá `https://www.verduleriavicky.com.ar` en `index.html`, `robots.txt` y `sitemap.xml`.
+Hoy es `https://laverdadera.vercel.app`. Si pasás a un dominio propio, reemplazalo en `index.html`, `robots.txt` y `sitemap.xml`.
 
 ## Animaciones (todas en CSS o JS liviano)
 - Letras de "La Verdadera" con entrada elástica y salto al pasar el mouse.
